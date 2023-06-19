@@ -2,6 +2,8 @@
 FIRST SCRIPT - MARCH 2020
 
 This script was one of the first I wrote, and as such took various shortcuts including hardcoding IDs and not considering variable scope.
+
+This script handled the automated movement of two lantern tokens on two different tracks, as well as handling chat messages with on-the-fly adjustments to their rotations, tracks, and 'light' (aura) radius. If I'd planned to have more than two lanterns I would have used a constructor instead of manually declaring the objects and their loops, but this worked for my purposes.
 */
 
 var lanternPage = "-MWL8G8rzkjdRo01_fKk"
