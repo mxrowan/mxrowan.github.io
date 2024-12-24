@@ -1,0 +1,30 @@
+#Resume p {
+    display: none;
+}
+#About p {
+    display: none;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav>li:hover {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+.color2 {
+    background-color: lightblue;
+}
+.feature-icon {
+    border-radius:50%;
+}
+
+@media (min-width: 768px) {
+    .sticky-md {
+        position: sticky;
+        top: 200px;
+    }
+}
