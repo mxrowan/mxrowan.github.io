@@ -37,13 +37,18 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#Portfolio" class="nav-link text-white d-flex align-items-center gap-1">
+                  <a href="#Portfolio" class="nav-link dropdown-toggle text-white d-flex align-items-center gap-1" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
                         <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
                         <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
                       </svg>
                     Portfolio
                   </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#Portfolio">See Portfolio Details</a></li>
+                    <li><a class="dropdown-item" href="/editing-service/">Grant Editing Service</a></li>
+                    <li><a class="dropdown-item" href="/recipes/">Recipe & Ingredient Dashboard</a></li>
+                  </ul>
                 </li>
                 <li>
                   <a href="#About" class="nav-link text-white d-flex align-items-center gap-1">
@@ -173,61 +178,35 @@
     </section>
 
     <section id="Portfolio">
-        <div class="container mx-auto my-4">
-            <div class="row">
-                <div class="col-md-3 border-end border-dark">
-                    <h2>AirTable Portfolio</h2>
-                    <p>These are sample databases using the designs I've made in professional and personal contexts. If you want help applying these techniques to your own purposes, <a href="#Contact">contact me</a> today for a free consultation and quote!</p>
-                </div>
+        <div class="container mx-auto my-4 g-2">
+          <h2>Airtable Portfolio</h2>
+          <p>These are sample databases using the designs I've made in professional and personal contexts. If you want help applying these techniques to your own purposes, <a href="#Contact">contact me</a> today and I am happy to discuss!</p>
+          <div class="row border-top border-dark pt-3">
+            <div class="col-md-3">
+                <h3>Grant Editing Service</h2>
+                <p>I worked with a client to design a booking system for a grant editing service from scratch, including applicant tracking, live booking, automated reminders, workflow automation, and assessment management. Click below to learn more!</p>
+              </div>
+            <div class="col">
+              <div class="container align-items-center justify-content-center">
+                <a href="./editing-service/">
+                  <img src="./images/editing requests.jpg" alt="screenshot of editing service airtable" width="100%"> 
+                  <div class="btn btn-primary mt-2">Explore Project</div>
+                </a>
+              </div>
+            </div>
+        </div>
+            <div class="row flex-md-row-reverse border-top border-dark pt-3 mt-3">
+                <div class="col-md-3">
+                    <h3>Recipe and Ingredient Database</h2>
+                    <p>I use this database to select recipes I want to make for the following week, and automatically generate a shopping list of ingredients! It also identifies recipes that would use up leftover ingredients I already have. Check it out!</p>
+                  </div>
                 <div class="col">
-                    <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="container align-items-center justify-content-center">
-                                <h3>Recipe & Ingredient Database</h3>
-                                <img src="./images/recipe airtable.jpg" alt="screenshot of recipe airtable" width="100%"> 
-                                <p>I use this database to select recipes I want to make for the following week, and automatically generate a shopping list of ingredients! It also identifies recipes that would use up leftover ingredients I already have. Check it out!</p>
-                                <p><a class="btn btn-lg btn-primary" href="https://airtable.com/appmkL5DIqy7TRYvT/shrdmdHE94lkrHqts" target="_blank">Explore</a></p>
-                              </div>
-                            </div>
-                          </div>
-<!--
-                          <div class="carousel-item">
-                            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                            <div class="container">
-                              <div class="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                            <div class="container">
-                              <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                              </div>
-                            </div>
-                          </div>
--->
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+                  <div class="container align-items-center justify-content-center">
+                    <a href="./recipes/">
+                      <img src="./images/recipe airtable.jpg" alt="screenshot of recipe airtable" width="100%"> 
+                      <div class="btn btn-primary mt-2">Explore Recipes</div> 
+                    </a>
+                  </div>
                 </div>
             </div>
     </section>
@@ -289,5 +268,6 @@
           </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
